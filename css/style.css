@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    background-color: #fff!important;
+}
+section{
+    padding: 80px 180px;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.header-logo>a {
+    font-size: 24px;
+    padding: 6px;
+    text-transform: uppercase;
+    color: #fed136;
+    text-decoration: none;
+    margin-left: 12%;
+    float: left;
+    font-family: 'Kaushan Script', cursive;
+
+}
+.header-menu{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header-navbar {
+    background-color: #212529;
+
+}
+.header-navbar ul{
+    padding: 0;
+    margin: 0;
+}
+.header-navbar>ul>li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+}
+
+.header-navbar>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.header-navbar ul>li>a:hover {
+    color: #fed136;
+    transition: all .3s ease-in;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.center-text .first {
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.center-text .second {
+    margin: 30px;
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.center-text button {
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #fed136;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#services .grid-container .grid-item{
+    text-align: center;
+}
+#services .grid-container .grid-item h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+#services .grid-container .grid-item p{
+    font-size: 19px;
+    color: #6c757d;
+    line-height: 26px;
+}
+.text-service{
+    text-align: center;
+    margin-bottom: 75px;
+}
+.text-service h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+}
+
+.text-service h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: gray;
+}
+
+.text-service p {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#services .icon{
+    position: relative;
+    width: 130px;
+    display: inline-block;
+    height: 120px;
+    background-color: #fed136;
+    border-radius: 100%;
+    color: white;
+}
+
+#services .icon i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#portfolio {
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.text-portfolio h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+}
+
+.text-portfolio h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    color: gray;
+    margin-top: 20px;
+}
+
+#portfolio .grid-container {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+#portfolio .grid-item{
+    background-color: white;
+}
+
+.bootom-text {
+    padding: 20px;
+}
+
+.bootom-text>h3 {
+    margin: 0;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.bootom-text h4 {
+    color: #6c757d!important;
+    font-family: sans-serif;
+    margin: 6px;
+}
+
+.icon-center:hover {
+    display: inline-block;
+}
+
+.picture-icon-center {
+    position: relative;
+}
+
+.grid-item .icon-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item .icon-pic {
+    position: relative;
+    text-align: center;
+    height: 270px;
+}
+
+.icon-pic::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(254, 209, 54, .9);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.icon-pic i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    font-size: 60px;
+}
+
+.grid-item:hover .icon-pic::before {
+    opacity: 0.9;
+}
+
+.grid-item:hover i {
+    opacity: 1;
+}
+
+#team {
+    text-align: center;
+}
+
+.img-radius {
+    width: 50%;
+    border-radius: 50%;
+    border: 7px solid rgba(0, 0, 0, .1);
+}
+
+
+.team-name {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.team-work {
+    color: #6c757d;
+    line-height: 1.75;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.icon-team {
+    margin: 7px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.icon-team:hover {
+    background-color: #fed136;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.team-icon-top {
+    margin-top: -10px;
+}
+
+.center-text-team {
+    text-align: center;
+    line-height: 1.75;
+    color: gray;
+}
+#img{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f8f9fa;
+}
+#img .grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#img .grid-item{
+    margin: 50px;
+}
+
+#img .grid-item>img{
+cursor: pointer;
+}
+#footer{
+    text-align: center;
+}
+.footer-text, #footer .policies{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+.footer-text{
+    left: 0;
+}
+#footer .grid-container .grid-item{
+    position: relative;
+}
+#footer .policies{
+    right: 0;
+}
+.policies>a{
+    color:#fed136 ;
+    margin: 10px;
+    text-decoration: none;
+}
+.policies>a:hover{
+    text-decoration: underline;
+}
